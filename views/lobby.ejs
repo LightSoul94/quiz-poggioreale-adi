@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+</head>
+<body>
+    <h1>Benvenuto, <%= nickname %>!</h1>
+    <h2>Domande:</h2>
+    <ul>
+        <% questions.forEach(question => { %>
+            <li>
+                <strong><%= question.questionText %></strong>
+                <ul>
+                    <% question.answers.forEach(answer => { %>
+                        <li><%= answer %></li>
+                    <% }) %>
+                </ul>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
