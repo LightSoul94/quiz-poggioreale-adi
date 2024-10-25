@@ -8,3 +8,13 @@ Server should run automatically when starting a workspace. To run manually, run:
 ```sh
 npm run dev
 ```
+
+## npm list
+
+```
+├── body-parser@1.20.3
+├── ejs@3.1.10
+├── express@4.19.2
+├── firebase@9.23.0
+└── nodemon@3.1.1
+```
